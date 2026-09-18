@@ -17,8 +17,8 @@ def birthdayCakeCandles(candles):
     # Write your code here
     maximum = max(candles)
     count = 0
-    for i in range(len(candles)):
-        if candles[i] == maximum:
+    for candle in candles:
+        if candle == maximum:
             count += 1
     return count
 
