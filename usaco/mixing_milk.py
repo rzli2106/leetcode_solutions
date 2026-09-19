@@ -13,10 +13,11 @@ for i in range(100):
     from_bucket = i % 3
     to_bucket = (i+1) % 3
 
-    if (c[to_bucket] - m[to_bucket]) > m[from_bucket]:
+    if (c[to_bucket] - m[to_bucket]) >= m[from_bucket]: #if destination bucket can fit all of pouring bucket
         m[to_bucket] += m[from_bucket]
         m[from_bucket] = 0
-    else:
+
+    else: #only pour max and subtract that from original
         m[from_bucket] -= (c[to_bucket] - m[to_bucket])
         m[to_bucket] += (c[to_bucket] - m[to_bucket])
 
