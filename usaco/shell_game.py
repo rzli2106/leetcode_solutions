@@ -1,3 +1,5 @@
+#only need to track pebble O(3*n) which is just O(n)
+
 with open("shell.in", "r") as file:
     lines = file.read().splitlines()
 
