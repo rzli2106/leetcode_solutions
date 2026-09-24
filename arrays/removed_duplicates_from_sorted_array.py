@@ -12,5 +12,3 @@ class Solution(object):
                 nums[insert] = nums[i]
                 insert += 1
         return insert
-
-        
