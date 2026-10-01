@@ -12,7 +12,7 @@ class Solution(object):
             for s in strs:
                 if i == len(s) or s[i] != strs[0][i]:
                     return result
-            result += s[i]
+            result += s[i] # or can be strs[0][i]
 
         return result
         
