@@ -5,10 +5,9 @@ class Solution(object):
         :rtype: List[int]
         """
         myMap = {}
+        result = []
         for n in nums:
             myMap[n] = 1 + myMap.get(n, 0)
-        result = []
-        for n in myMap:
-            if myMap[n] > 1:
+            if myMap[n] == 2:
                 result.append(n)
         return result
